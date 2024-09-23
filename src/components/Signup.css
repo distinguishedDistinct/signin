@@ -1,68 +1,118 @@
 body {
-    background-image: url("../assets/background-image.jpg");
-    background-size: cover;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-  
-  .container {
-    display: flex;
-    justify-content: space-evenly;
-  }
-  
+  background-image: url("../assets/background-image.jpg");
+  background-size: cover;
+  background-position: center; /* Ensure the image is centered */
+  display: flex;
+  justify-content: center; /* Center the content */
+  flex-wrap: wrap;
+  min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  width: 100%; /* Ensure the container takes full width */
+}
+
+.welcome-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  margin: 20px; /* Add margin for spacing */
+  flex: 1; /* Allow the container to grow */
+}
+
+.welcome-container h1 {
+  font-size: 2rem; /* Use rem for responsive font size */
+}
+
+.signup-form {
+  background-color: white;
+  width: 90%; /* Use percentage for responsive width */
+  max-width: 550px; /* Limit the maximum width */
+  height: auto;
+  border-radius: 8px; /* Optional: add rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: add a subtle shadow */
+}
+
+.form-content {
+  color: black;
+  margin: 20px;
+}
+
+.form-content h1 {
+  margin-bottom: -20px;
+}
+
+.form-heading {
+  margin-left: 10px;
+}
+
+.form-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.form-info div {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.form-info div:last-child {
+  margin-right: 0;
+}
+
+.submit-btn {
+  width: 100%;
+  background-color: rgb(31, 190, 148);
+  color: white;
+  margin-left: 10px;
+  margin-top: 10px;
+  height: 50px;
+  border: none; /* Optional: remove border */
+  border-radius: 5px; /* Optional: add rounded corners */
+  cursor: pointer; /* Optional: change cursor to pointer */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
   .welcome-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    color: white;
-    margin-right: 200px;
+      margin-right: 0; /* Remove margin on smaller screens */
+      text-align: center; /* Center text on smaller screens */
   }
-  
+
   .welcome-container h1 {
-    font-size: 35px;
+      font-size: 1.5rem; /* Adjust font size */
   }
-  
+
   .signup-form {
-    background-color: white;
-    width: 550px;
-    height: auto;
+      width: 90%; /* Use full width on smaller screens */
+      margin: 0 auto; /* Center the form */
   }
-  
-  .form-content {
-    color: black;
-    margin: 20px;
-  }
-  
-  .form-content h1 {
-    margin-bottom: -20px;
-  }
-  
-  .form-heading {
-    margin-left: 10px;
-  }
-  
+
   .form-info {
-    display: flex;
-    justify-content: space-between;
+      flex-direction: column; /* Stack elements vertically */
   }
-  
+
   .form-info div {
-    flex: 1;
-    margin-right: 10px;
+      margin-right: 0; /* Remove right margin */
+      margin-bottom: 10px; /* Add bottom margin for spacing */
   }
-  
+
   .form-info div:last-child {
-    margin-right: 0;
+      margin-bottom: 0; /* Remove bottom margin for last item */
+  }
+}
+
+@media (max-width: 480px) {
+  .welcome-container h1 {
+      font-size: 1.25rem; /* Further adjust font size for very small screens */
   }
 
-  .submit-btn
-  {
-    width: 100%;
-    background-color: rgb(31, 190, 148);
-    color: white;
-    margin-left: 10px;
-    margin-top: 10px;
-    height: 50px;
+  .submit-btn {
+      height: 45px; /* Adjust button height */
   }
-
+}
