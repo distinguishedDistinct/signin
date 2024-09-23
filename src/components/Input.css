@@ -1,0 +1,39 @@
+/* Container holding the input and the label */
+.input-container {
+    position: relative;
+    width: 100%; /* Adjust width as needed */
+    margin: 20px 0;
+    margin-right: 10px;
+    margin-left: 10px;
+
+  }
+  
+  
+  
+  /* The floating label (which acts as the placeholder) */
+  .floating-label {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: gray;
+    background-color: white;
+    pointer-events: none;
+    transition: all 0.3s ease; /* Smooth transition */
+  }
+  
+  /* When input is focused or filled, move the label up */
+  .input-container.focus .floating-label {
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px;
+    color: green; /* Change label color when focused */
+  }
+  
+  /* Add focus state styles for the input */
+  .styled-input:focus {
+    border-color: green; /* Change border color when focused */
+  }
+  
