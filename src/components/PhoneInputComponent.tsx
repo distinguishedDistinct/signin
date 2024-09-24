@@ -11,10 +11,8 @@ export const PhoneInputComponent = () => {
       <label className="phone-label" htmlFor="phoneInput">
         Primary Cell Phone Number
       </label>
-      
-      <PhoneInput
 
-     
+      <PhoneInput
         country={"pk"} // Set default country to Pakistan
         value={phone}
         onChange={(phone) => setPhone(phone)}
@@ -24,14 +22,13 @@ export const PhoneInputComponent = () => {
           autoFocus: true,
           placeholder: "",
         }}
-
         containerStyle={{
-          width: "180px", // Set the width of the entire container (including country code)
-          marginLeft: "10px",
+          width: "auto", // Set the width of the entire container (including country code)
+
           marginTop: "28px",
         }}
         inputStyle={{
-          width: "238px", // Adjust the input field width (excluding country code)
+          width: "100%", // Adjust the input field width (excluding country code)
           padding: "10px",
           borderRadius: "5px",
           backgroundColor: "transparent",

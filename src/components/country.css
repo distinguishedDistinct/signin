@@ -4,7 +4,7 @@
     max-width: 300px;
     height: 40px !important; /* Force height change */
     margin: 25px 0;
-    margin-left: 10px;
+    
 }
 
 .dropdown-header {
@@ -20,8 +20,15 @@
 }
 
 .dropdown-arrow {
-    font-size: 12px;
+    font-size: 16px;
+    margin-left: 60%;
 
+}
+
+.country-txt{
+    font-size: 16px;
+    margin-left: 10px;
+    
 }
 
 .dropdown-list {

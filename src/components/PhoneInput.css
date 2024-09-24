@@ -7,7 +7,7 @@
 .phone-label {
   position: absolute;
   top: 20px; /* Adjust the label's distance from the top */
-  left: 56%;
+  left: 50%;
   transform: translateX(-50%);
   font-size: 8px;
   background-color: white; /* Matches the background to 'cut' through the border */
@@ -29,4 +29,10 @@
 }
 .phone-helper-text{
   font-size: px;
+}
+
+@media (max-width: 991px) {
+  .phone-helper-text {
+    
+  }
 }
