@@ -30,9 +30,3 @@
 .phone-helper-text{
   font-size: px;
 }
-
-@media (max-width: 991px) {
-  .phone-helper-text {
-    
-  }
-}
