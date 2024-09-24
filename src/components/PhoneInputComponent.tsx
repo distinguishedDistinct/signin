@@ -24,14 +24,14 @@ export const PhoneInputComponent = () => {
         }}
         containerStyle={{
           width: "auto", // Set the width of the entire container (including country code)
-
           marginTop: "28px",
         }}
         inputStyle={{
-          width: "100%", // Adjust the input field width (excluding country code)
+          width: "89%", // Adjust the input field width (excluding country code)
           padding: "10px",
           borderRadius: "5px",
           backgroundColor: "transparent",
+          marginLeft: "40px",
         }}
       />
       <small className="phone-helper-text">
