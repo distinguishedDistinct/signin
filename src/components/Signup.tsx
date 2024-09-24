@@ -9,7 +9,7 @@ export const Signup = () => {
     <>
       <div className="container">
         <div className="welcome-container">
-          <img src="./src/assets/logo-white.png" width="110px" alt="" />
+          <img src="../src/assets/logo-white.png" width="110px" alt="" />
           <h1>
             Welcome To <br />
             Higher Education Commission
