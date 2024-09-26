@@ -3,13 +3,14 @@ import Input from "./Input";
 import PhoneInputComponent from "./PhoneInputComponent";
 import Cnic from "./Cnic";
 import CountrySelect from "./country";
+import logo from "../assets/logo-white.png";
 
 export const Signup = () => {
   return (
     <>
       <div className="container">
         <div className="welcome-container">
-          <img src="../assets/logo-white.png" width="110px" alt="" />
+          <img src={logo} width="110px" alt="logo" />
           <h1>
             Welcome To <br />
             Higher Education Commission
