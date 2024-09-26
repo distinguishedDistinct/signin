@@ -1,5 +1,5 @@
 body {
-  background-image: url("../assets/background-image.jpg");
+  background-image: url("../../public/assets/background-image.jpg");
   background-size: cover;
   background-position: center;
   min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */

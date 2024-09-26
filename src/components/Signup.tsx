@@ -3,7 +3,7 @@ import Input from "./Input";
 import PhoneInputComponent from "./PhoneInputComponent";
 import Cnic from "./Cnic";
 import CountrySelect from "./country";
-import logo from "../assets/logo-white.png";
+import logo from "../../public/assets/logo-white.png";
 
 export const Signup = () => {
   return (
