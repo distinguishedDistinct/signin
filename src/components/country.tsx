@@ -260,7 +260,9 @@ const CountrySelect = () => {
   return (
     <div className="dropdown-container">
       <div className="dropdown-header" onClick={() => setIsOpen(!isOpen)}>
-        <span className="country-txt">{selectedCountry ? selectedCountry : "Pakistan"}</span>
+        <span className="country-txt">
+          {selectedCountry ? selectedCountry : "Pakistan"}
+        </span>
         <span className="dropdown-arrow">{isOpen ? "▲" : "▼"}</span>
       </div>
       {isOpen && (

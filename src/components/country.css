@@ -17,11 +17,12 @@
     background-color: white;
     height: 100%; /* Ensure it takes the full height of the container */
     box-sizing: border-box; /* Prevent overflow by including padding within the box */
+    width: 100%;
 }
 
 .dropdown-arrow {
     font-size: 16px;
-    margin-left: 60%;
+    margin-left: 55%;
 
 }
 

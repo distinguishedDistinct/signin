@@ -1,29 +1,30 @@
 body {
   background-image: url("../assets/background-image.jpg");
   background-size: cover;
-  background-position: center; /* Ensure the image is centered */
-  display: flex;
-  justify-content: center; /* Center the content */
-  flex-wrap: wrap;
+  background-position: center;
   min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
 }
 
 .container {
   display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap; 
-  width: 100%; 
-  
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;  
+  min-width: 100%;
+  margin-top: 50px;
 }
 
 .welcome-container {
   display: flex;
   justify-content: center;
+  align-items: start;
   flex-direction: column;
   color: white;
-  min-width: auto;
+  width: 50%;
+  margin-right: auto;
   margin: 20px; 
   flex: 1; 
+  margin-left: 100px;
 }
 
 .welcome-container h1 {
@@ -31,11 +32,15 @@ body {
 }
 
 .signup-form {
+  display: flex;
+  justify-content: end;
+  align-items: center;
   background-color: white;
-  width: 90%; 
+  width: 50%; 
   max-width: 550px; 
   height: auto;
   border-radius: 8px; 
+  margin-right: 100px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
 }
 
@@ -56,7 +61,7 @@ body {
 
 .form-info div {
   flex: 1;
-  margin-right: 10px;
+  margin-right: 30px;
 }
 
 .form-info div:last-child {
@@ -67,34 +72,33 @@ body {
   width: 100%;
   background-color: rgb(31, 190, 148);
   color: white;
-  
   margin-top: 10px;
   height: 50px;
-  border: none; /* Optional: remove border */
-  border-radius: 5px; /* Optional: add rounded corners */
-  cursor: pointer; /* Optional: change cursor to pointer */
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
 }
 
-/* Media Queries for Responsiveness */
 @media (max-width: 991px) {
   .welcome-container {
-      margin-right: 0; /* Remove margin on smaller screens */
-      text-align: center; /* Center text on smaller screens */
+      margin-right: 0; 
+      text-align: center; 
       display: flex;
-   
   }
 
   .welcome-container h1 {
       font-size: 1.5rem; /* Adjust font size */
+      margin-left: auto;
+      margin-right: auto;
   }
 
-  .welcome-container img{
+  .welcome-container img {
     margin-left: auto;
     margin-right: auto;
   }
 
   .signup-form {
-      width: 90%; /* Use full width on smaller screens */
+      width: auto; /* Use full width on smaller screens */
       margin: 0 auto; /* Center the form */
   }
 
@@ -109,6 +113,26 @@ body {
 
   .form-info div:last-child {
       margin-bottom: 0; /* Remove bottom margin for last item */
+  }
+}
+
+@media (max-width: 657px) {
+  .container {
+    flex-direction: column; /* Stack containers vertically */
+    align-items: center; /* Center the containers */
+  }
+
+  .welcome-container {
+    width: 100%; /* Take full width */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .signup-form {
+    width: 80%; /* Make the form full-width */
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
