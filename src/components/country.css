@@ -1,53 +1,50 @@
 .dropdown-container {
-    position: relative;
-    width: auto;
-    max-width: 300px;
-    height: 40px !important; /* Force height change */
-    margin: 25px 0;
-    
+  position: relative;
+  width: auto;
+  max-width: 300px;
+  height: 40px !important; /* Force height change */
+  margin: 25px 0;
 }
 
 .dropdown-header {
-    padding: 5px 10px; /* Adjust padding to fit within new height */
-    border: 1px solid #ccc;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-    height: 100%; /* Ensure it takes the full height of the container */
-    box-sizing: border-box; /* Prevent overflow by including padding within the box */
-    width: 100%;
+  padding: 5px 10px; /* Adjust padding to fit within new height */
+  border: 1px solid #ccc;
+  cursor: pointer;
+
+  align-items: center;
+  background-color: white;
+  height: 100%; /* Ensure it takes the full height of the container */
+  box-sizing: border-box; /* Prevent overflow by including padding within the box */
+  width: 100%;
 }
 
 .dropdown-arrow {
-    font-size: 16px;
-    margin-left: 55%;
-
+  font-size: 16px;
+  position: absolute;
+  left: 90%;
 }
 
-.country-txt{
-    font-size: 16px;
-    margin-left: 10px;
-    
+.country-txt {
+  font-size: 16px;
+  margin-left: 10px;
 }
 
 .dropdown-list {
-    position: absolute;
-    width: 100%;
-    max-height: 160px;
-    overflow-y: auto;
-    border: 1px solid #ccc;
-    background-color: white;
-    z-index: 1000;
+  position: absolute;
+  width: 100%;
+  max-height: 160px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  background-color: white;
+  z-index: 1000;
 }
 
 .dropdown-list-item {
-    padding: 10px;
-    cursor: pointer;
-    background-color: white;
+  padding: 10px;
+  cursor: pointer;
+  background-color: white;
 }
 
 .dropdown-list-item:hover {
-    background-color: #f0f0f0;
+  background-color: #f0f0f0;
 }
